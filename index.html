@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Balloons</title>
+</head>
+<body>
+    <div class="counter-wrapper">
+        <p>You have popped<span id='counter-game'> 0 </span>balloons</p>
+    </div>
+    <div class="modal-wrapper">
+        <div class="fail-modal">
+            <h3>Sorry!</h3>
+            <div class="image-div"></div>
+            <p>You have popped<span id='counter-fail'> 0 </span>balloons</p>
+            <p>Play again?</p>
+            <div class="button-wrapper">
+                <button id='restart'>Yes</button>
+                <button id='close'>No</button>
+            </div>
+        </div>
+        <div class="win-modal">
+            <h3>Congratulations!</h3>
+            <div class="image-div"></div>
+            <p>You have popped<span id='counter-win'> 0 </span>balloons</p>
+            <p>You are a champion!</p>
+        </div>
+    </div>
+    <audio autoplay muted>
+        <source src="Materials/sounds/bg-music.mp3" type="audio/mp3">
+    </audio>
+    <audio src="Materials/sounds/pop.mp3"></audio>
+<script src="js/script.js"></script>
+</body>
+</html>
